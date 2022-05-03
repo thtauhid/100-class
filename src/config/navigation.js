@@ -4,8 +4,8 @@ const navigation = [
         link: "/classes",
     },
     {
-        title: "Todo",
-        link: "/todo"
+        title: "Todos",
+        link: "/todos"
     }
 ]
 
