@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { auth } from './firebase'
+import { auth } from './config/firebase'
 
 function Login() {
 
