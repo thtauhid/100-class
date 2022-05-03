@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './comps/Button'
 import MenuItem from './comps/MenuItem'
 import navigation from './config/navigation'
+import { Logout } from './utils'
 
 function Nav() {
   return (
@@ -19,7 +20,7 @@ function Nav() {
                     })}
                 </ul>
                 <div className="d-flex">
-                    <Button title="Logout" type="logout" />
+                    <Button title="Logout" type="logout" onClick={Logout} />
                 </div>
             </div>
         </div>

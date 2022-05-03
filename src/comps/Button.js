@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button({title, type}) {
+function Button({title, type, onClick}) {
 
     if(type === 'logout') {
-        return <button className="btn btn-danger">{title}</button>
+        return <button className="btn btn-danger" onClick={onClick}>{title}</button>
     }
   
 }
