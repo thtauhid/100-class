@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../style/classes.css'
 import List from './List'
-
 
 function ClassCard({data}) {
   return (

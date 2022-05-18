@@ -4,6 +4,22 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.upcoming-container h2 {
+  font-size: calc(0.5rem + .9vw);
+}
+
 .post-list-container {
   display: -webkit-box;
   display: -ms-flexbox;
