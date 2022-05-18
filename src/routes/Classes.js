@@ -1,7 +1,7 @@
 import React from 'react'
-import ClassCard from './comps/ClassCard'
-import Nav from './Nav'
-import classes from './config/classes'
+import ClassCard from '../comps/ClassCard'
+import Nav from '../Nav'
+import classes from '../config/classes'
 
 function Classes() {
   return (

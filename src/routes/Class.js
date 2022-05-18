@@ -1,7 +1,7 @@
-import Nav from './Nav'
-import Banner from './comps/Banner'
-import Upcoming from './comps/Upcoming'
-import Content from './comps/Content'
+import Nav from '../Nav'
+import Banner from '../comps/Banner'
+import Upcoming from '../comps/Upcoming'
+import Content from '../comps/Content'
 
 function Class() {
   return (

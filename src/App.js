@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Classes from "./Classes";
-import Todos from "./Todos";
-import Home from './Home'
-import Login from './Login'
-import Class from "./Class";
+import Classes from "./routes/Classes";
+import Todos from "./routes/Todos";
+import Home from './routes/Home'
+import Login from './routes/Login'
+import Class from "./routes/Class";
 
 function App() {
 
