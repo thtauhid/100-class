@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../style/classes.css'
+import List from './List'
 
 
 function ClassCard({data}) {
@@ -13,11 +14,7 @@ function ClassCard({data}) {
             </div>
             
             <div className="card-body">
-                <ul>
-                    {data.assignments.map(item => {
-                        return <li><Link to={item.link}> {item.title} </Link></li>
-                    })}
-                </ul>
+                <List data={data.assignments} />
             </div>
         </div>
     </>
