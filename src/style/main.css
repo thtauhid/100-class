@@ -1,40 +1,68 @@
 * {
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .post-list-container {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.post-list-single {
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: .25rem;
-    cursor: pointer;
-
-    display: flex;
-
+.post-list-container .post {
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: .25rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.post-list-single-icon {
-    color: #fff;
-    background: #0d6efd;
-    border-radius: 50px;
-    font-size: 25px;
-    padding: 15px;
-    margin-right: 15px;
+.post-list-container .post .post-icon {
+  color: #fff;
+  background: #0d6efd;
+  border-radius: 50px;
+  font-size: 25px;
+  padding: 15px;
+  margin-right: 15px;
 }
 
-.post-list-single-title {
-    font-size: large;
+.post-list-container .post .post-details .post-title {
+  font-size: large;
 }
 
-.post-list-single-date {
-    font-size: small;
-    padding: 0;
-    margin: 0;
+.post-list-container .post .post-details .post-date {
+  font-size: small;
+  padding: 0;
+  margin: 0;
 }
+
+.banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-container .banner-icon {
+  font-size: 2.5rem;
+  color: #fff;
+  background: #0d6efd;
+  border-radius: 50px;
+  padding: 15px;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=main.css.map */
