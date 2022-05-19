@@ -3,12 +3,19 @@ import Button from './comps/Button'
 import MenuItem from './comps/MenuItem'
 import navigation from './config/navigation'
 import { Logout } from './utils'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChalkboard } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+
 
 function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-            <a className="navbar-brand" href="/">Class 100</a>
+            <Link to='/' className='navbar-brand'>
+                <FontAwesomeIcon className='brand-icon' icon={faChalkboard} />
+                {' White Board'}
+            </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
