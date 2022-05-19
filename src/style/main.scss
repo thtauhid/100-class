@@ -35,6 +35,10 @@ a:hover {
         padding: 1.5rem;
         cursor: pointer;
 
+        &:hover {
+            border-color: $brand-color;
+        }
+
         .card-head {
             .class-title {
                 color: $brand-color;
