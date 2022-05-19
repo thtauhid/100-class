@@ -23,7 +23,7 @@ function Nav() {
             <div className="collapse navbar-collapse" id="navbarColor01">
                 <ul className="navbar-nav me-auto">
                     {navigation.map(item => {
-                        return <MenuItem title={item.title} link={item.link}  />
+                        return <MenuItem key={item.title} title={item.title} link={item.link}  />
                     })}
                 </ul>
                 <div className="d-flex">
