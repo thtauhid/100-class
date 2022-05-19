@@ -16,6 +16,29 @@ a:hover {
   cursor: pointer;
 }
 
+.classes-container .class-card {
+  min-height: 10rem;
+  min-width: 20rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  margin: .5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.classes-container .class-card .card-head .class-title {
+  color: #0d6efd;
+}
+
+.classes-container .class-card .card-body {
+  padding: 1rem 0;
+}
+
+.list-container {
+  list-style: none;
+  padding-left: 0;
+}
+
 .upcoming-container h2 {
   font-size: calc(0.5rem + .9vw);
 }

@@ -1,3 +1,6 @@
+$brand-color: #0d6efd;
+$border-color: rgba(0,0,0,.125);
+
 * {
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -19,6 +22,36 @@ a:hover {
 .navbar {
     .brand-icon {
         // font-size: 12
+    }
+}
+
+.classes-container {
+    .class-card {
+        min-height: 10rem;
+        min-width: 20rem;
+        border: 1px solid $border-color;
+        border-radius: .25rem;
+        margin: .5rem;
+        padding: 1.5rem;
+        cursor: pointer;
+
+        .card-head {
+            .class-title {
+                color: $brand-color;
+            }
+            .class-teacher {}
+        }
+        .card-body {
+            padding: 1rem 0;
+        }
+    }
+}
+
+.list-container {
+    list-style: none;
+    padding-left: 0;
+    .list-item {
+
     }
 }
 
