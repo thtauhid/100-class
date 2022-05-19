@@ -1,12 +1,14 @@
 import Nav from '../Nav'
 import Comments from '../comps/Comments'
 import post from '../config/post'
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faClock } from '@fortawesome/free-solid-svg-icons'
+import CommentBox from '../comps/CommentBox';
+
 
 
 function Post() {
+    
   return (
     <>
         <Nav />
@@ -27,6 +29,11 @@ function Post() {
             <p className='post-description text-justify'>{post.description}</p>
             
             <Comments data={post.comments} />
+
+            <br />
+            <hr />
+
+            <CommentBox />
         </div>
     </>
   )

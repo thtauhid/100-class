@@ -19,11 +19,9 @@ a:hover {
     cursor: pointer;
 }
 
-.navbar {
-    .brand-icon {
-        // font-size: 12
-    }
-}
+// .navbar {
+//     .brand-icon {}
+// }
 
 .classes-container {
     .class-card {
@@ -43,7 +41,7 @@ a:hover {
             .class-title {
                 color: $brand-color;
             }
-            .class-teacher {}
+            // .class-teacher {}
         }
         .card-body {
             padding: 1rem 0;
@@ -54,9 +52,7 @@ a:hover {
 .list-container {
     list-style: none;
     padding-left: 0;
-    .list-item {
-
-    }
+    // .list-item {}
 }
 
 .upcoming-container {
@@ -75,7 +71,6 @@ a:hover {
 
     display: flex;
     flex-direction: column;
-
 
     .post {
 
@@ -104,6 +99,10 @@ a:hover {
                 padding: 0;
                 margin: 0;
             }
+        }
+
+        &:hover {
+            border-color: $brand-color;
         }
     }
 }
@@ -140,7 +139,7 @@ a:hover {
         .post-author {
             padding-right: 15px;
         }
-        .post-date {}
+        // .post-date {}
     }
 
     .post-description {
@@ -149,5 +148,28 @@ a:hover {
       
         max-width: 650px;
         line-height: 1.75rem;
+    }
+}
+
+.commentbox-container {
+    textarea {
+        padding: .5rem;
+        margin: .5rem 0;
+        height: 3rem;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $brand-color;
+        }
+    }
+
+    button {
+        outline: none;
+        border: 0;
+        padding: .5rem;
+        margin: .5rem;
+        border-radius: .25rem;
+        color: #fff;
+        background: $brand-color;
     }
 }
