@@ -81,4 +81,24 @@ a:hover {
   padding: 15px;
   margin-right: 15px;
 }
+
+.post-container .post-title {
+  color: #0d6efd;
+}
+
+.post-container .post-icon {
+  color: #0d6efd;
+  padding: 0 5px;
+}
+
+.post-container .post-meta .post-author {
+  padding-right: 15px;
+}
+
+.post-container .post-description {
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: 650px;
+  line-height: 1.75rem;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,15 +1,15 @@
 const posts = [
     {
         title: "John posted new assignment: Assignment 01",
-        link: "lab01"
+        link: "/post/lab01"
     },
     {
         title: "John posted new assignment: Assignment 02",
-        link: "lab02"
+        link: "/post/lab02"
     },
     {
         title: "John posted new assignment: Assignment 03",
-        link: "lab03"
+        link: "/post/lab03"
     },
 ]
 
