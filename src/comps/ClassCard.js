@@ -7,11 +7,11 @@ function ClassCard({data}) {
     <>
       <div className='class-card'>
         <div className='card-head'>
-          <h2 className='class-title'><Link to={data.link}>{data.title}</Link></h2>
-          <span className='class-teacher'>{data.teacher}</span>
+          <h2 className='class-title'><Link to={`/class/${data.id}`}>{data.name}</Link></h2>
+          <span className='class-teacher'>{data.id}</span>
         </div>
         <div className='card-body'>
-          <List data={data.assignments} />
+          {/* <List data={data.assignments} /> */}
         </div>
       </div>
     </>
