@@ -17,8 +17,8 @@ function App() {
         <Route path="/" element={userId?<Classes />:<Login/>} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/todos" element={<Todos />} />
-        <Route path="/class/*" element={<Class />} />
-        <Route path="/post/*" element={<Post />} />
+        <Route path="/class/:id" element={<Class />} />
+        <Route path="/post/:id" element={<Post />} />
       </Routes>
     </BrowserRouter>
   );
