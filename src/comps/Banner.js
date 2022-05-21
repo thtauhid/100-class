@@ -7,13 +7,13 @@ import { doc, getDoc } from "firebase/firestore";
 
 function Banner({bg}) {
   
-  const {id} = useParams()
+  const {class_id} = useParams()
   const [classDetails, setClassDetails] = useState({name: "Loading...", subject_code: "Loading..."})
 
   useEffect(() => {
     
     const getClassDetails = async () => {
-      const docRef = doc(db, "classes", id)
+      const docRef = doc(db, "classes", class_id)
       const data = await getDoc(docRef);
       setClassDetails(data.data())
     }
@@ -27,7 +27,7 @@ function Banner({bg}) {
       <div className="card mb-3 mt-3 p-5 banner-container" style={{background: bg}}>
         <FontAwesomeIcon className='banner-icon' icon={faFolder} />
         <div className="banner-details">
-          <h1 className='text-white'>{classDetails.name}</h1>
+          <h1 className='text-white'>{classDetails.subject_name}</h1>
           <h4 className="text-white">{classDetails.subject_code}</h4>
         </div>
       </div>

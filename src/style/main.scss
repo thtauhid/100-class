@@ -19,9 +19,19 @@ a:hover {
     cursor: pointer;
 }
 
-// .navbar {
-//     .brand-icon {}
-// }
+.navbar-container {
+    .right-menu {
+        .create-icon {
+            margin-right: 2rem;
+            outline: none;
+            padding: 0.5rem;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 2.5rem;
+        }
+    }
+}
 
 .classes-container {
     .class-card {
@@ -172,4 +182,47 @@ a:hover {
         color: #fff;
         background: $brand-color;
     }
+}
+
+
+.create-classroom-container {
+    max-width: 450px;
+
+    h1 {
+        color: $brand-color;
+    }
+}
+
+.create-post-container {
+    margin: 0.5rem 0;
+    // transition: all 4s;
+    
+    textarea {
+        outline: none;
+        border: 1px solid $border-color;
+        transition: all 1s;
+
+        &:hover {
+            outline: none;
+            border: 1px solid $brand-color;
+            cursor: pointer;
+        }
+
+        &:focus {
+            min-height: calc(1.5em + 8.75rem + 2px);
+            cursor: text;
+        }
+    }
+
+    // button {
+    //     transition: opacity 1s ease-out;
+    //     opacity: 0;
+    //     height: 0;
+    //     overflow: hidden;
+    // }
+
+    // textarea:focus + button {
+    //     opacity: 1;
+    //     height: auto;
+    // }
 }

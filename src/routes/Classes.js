@@ -28,7 +28,7 @@ function Classes() {
   return (
     <>
       <Nav />
-      <div className='classes-container d-flex container mt-3'>
+      <div className='classes-container d-flex flex-wrap container mt-3'>
         {classes.map( item =>  <ClassCard key={item.id} data={item} /> )}
       </div>
     </>

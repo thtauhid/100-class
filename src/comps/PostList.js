@@ -6,21 +6,23 @@ import { db } from '../config/firebase';
 import { collection, query, where, getDocs } from "firebase/firestore";
 
 function PostList() {
-    const {id} = useParams()
+    const {class_id} = useParams()
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
 
-        const getQueryData = async () => {
-            const q = query(collection(db, "posts"), where("class", "==", id))
-            const querySnapshot = await getDocs(q);
-            const data = querySnapshot.docs.map((doc) => {
-                return {...doc.data(), id: doc.id}
-            })
+        const getPosts = async () => {
+            const collectionAddress = "classes/" + class_id + "/posts"
+            const classesCollectionRef = collection(db, collectionAddress);
+            const classData = await getDocs(classesCollectionRef)
+
+            const data = classData.docs.map(item => {
+                return {...item.data(), id: item.id}
+            }) 
             setPosts(data)
         }
 
-        getQueryData()
+        getPosts()
         
     }, [])
     
@@ -35,7 +37,7 @@ function PostList() {
                     <div className='post'>
                         <FontAwesomeIcon className='post-icon' icon={faPaperPlane} />
                         <div className='post-details'>
-                            <Link className='post-title' to={`/post/${item.id}`}> {item.title} </Link>
+                            <Link className='post-title' to={`post/${item.id}`}> {item.title} </Link>
                             <p className='post-date'>12 Aug</p>
                         </div>
                     </div>

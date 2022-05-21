@@ -6,6 +6,7 @@ import Home from './routes/Home'
 import Login from './routes/Login'
 import Class from "./routes/Class";
 import Post from "./routes/Post";
+import CreateClassRoom from "./routes/CreateClassRoom";
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
         <Route path="/" element={userId?<Classes />:<Login/>} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/todos" element={<Todos />} />
-        <Route path="/class/:id" element={<Class />} />
-        <Route path="/post/:id" element={<Post />} />
+        <Route path="/class/:class_id" element={<Class />} />
+        <Route path="/class/:class_id/post/:post_id" element={<Post />} />
+        <Route path="/create" element={<CreateClassRoom />} />
       </Routes>
     </BrowserRouter>
   );

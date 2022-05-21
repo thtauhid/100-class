@@ -4,13 +4,13 @@ import MenuItem from './comps/MenuItem'
 import navigation from './config/navigation'
 import { Logout } from './utils'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChalkboard } from '@fortawesome/free-solid-svg-icons'
+import { faChalkboard, faPlus } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="navbar-container navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
             <Link to='/' className='navbar-brand'>
                 <FontAwesomeIcon className='brand-icon' icon={faChalkboard} />
@@ -26,7 +26,14 @@ function Nav() {
                         return <MenuItem key={item.title} title={item.title} link={item.link}  />
                     })}
                 </ul>
-                <div className="d-flex">
+
+                <div className="d-flex right-menu">
+                
+                    <button className="create-icon">
+                        <Link to='/create'>
+                            <FontAwesomeIcon icon={faPlus} />
+                        </Link>
+                    </button>
                     <Button title="Logout" type="logout" onClick={Logout} />
                 </div>
             </div>

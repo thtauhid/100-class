@@ -3,6 +3,7 @@ import Banner from '../comps/Banner'
 import Content from '../comps/Content'
 import upcoming from '../config/upcoming'
 import List from '../comps/List'
+import CreatePost from '../comps/CreatePost'
 function Class() {
   return (
     <>
@@ -19,7 +20,7 @@ function Class() {
               </div>
             </aside>
             <main className='col-md-9'>
-                {/* Posting Area */}
+                <CreatePost />
                 <Content/>
             </main>
 

@@ -24,7 +24,7 @@ function ClassCard({data}) {
     <>
       <div className='class-card'>
         <div className='card-head'>
-          <h2 className='class-title'><Link to={`/class/${data.id}`}>{data.name}</Link></h2>
+          <h2 className='class-title'><Link to={`/class/${data.id}`}>{`${data.subject_name} (${data.class_name})`}</Link></h2>
           <span className='class-teacher'>{ teacherName }</span>
           
         </div>
