@@ -1,5 +1,13 @@
 # White Board
-An online classroom web app inspired from Google Classroom. 
-(Part of my #100DaysOfCode)
 
-Follow me on [Twitter](https://twitter.com/thtxyz)
+An open source project inspired by google classroom.
+
+## Future Development
+
+<!-- Need to Write down -->
+
+Pull requests are welcome
+
+## Known Issues
+
+<!-- Need to Write down -->
