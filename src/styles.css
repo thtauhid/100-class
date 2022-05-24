@@ -1,0 +1,210 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.signup-container {
+  max-width: 500px;
+}
+
+.create-classroom-container {
+  max-width: 500px;
+}
+
+.classes-container .class-card {
+  min-height: 10rem;
+  min-width: 20rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.classes-container .class-card:hover {
+  border-color: #0d6efd;
+}
+
+.classes-container .class-card .card-head .class-title {
+  color: #0d6efd;
+}
+
+.classes-container .class-card .card-body {
+  padding: 1rem 0;
+}
+
+.upcoming-container {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.upcoming-container h2 {
+  font-size: calc(0.5rem + 0.9vw);
+}
+
+.banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-container .banner-icon {
+  font-size: 2.5rem;
+  color: #fff;
+  background: #0d6efd;
+  border-radius: 50px;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+.post-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post-list-container .post {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-list-container .post .post-icon {
+  color: #fff;
+  background: #0d6efd;
+  border-radius: 50px;
+  font-size: 22.5px;
+  padding: 12.5px;
+  margin-right: 15px;
+}
+
+.post-list-container .post .post-details .post-author {
+  font-size: large;
+  display: block;
+  color: #0d6efd;
+}
+
+.post-list-container .post .post-details .post-date {
+  display: block;
+  font-size: small;
+}
+
+.post-list-container .post:hover {
+  border-color: #0d6efd;
+}
+
+.assign-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.assign-list-container .assign {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assign-list-container .assign .assign-icon {
+  color: #fff;
+  background: #0d6efd;
+  border-radius: 50px;
+  font-size: 22.5px;
+  padding: 12.5px;
+  margin-right: 15px;
+}
+
+.assign-list-container .assign .assign-details .assign-title {
+  font-size: larger;
+  display: block;
+  color: #0d6efd;
+}
+
+.assign-list-container .assign .assign-details .assign-date {
+  display: block;
+  font-size: small;
+}
+
+.assign-list-container .assign:hover {
+  border-color: #0d6efd;
+}
+
+.navbar-container .right-menu .create-icon {
+  margin-right: 2rem;
+  outline: none;
+  padding: 0.5rem;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 2.5rem;
+}
+
+.join-container {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 2rem;
+  max-width: 500px;
+}
+
+.join-container .class-details {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+}
+
+.landing-page-container .icon {
+  font-size: 7.5rem;
+  padding: 2.5rem;
+}
+
+.create-assignment-container .marks {
+  max-width: 125px;
+}
+
+.create-assignment-container .date {
+  max-width: 225px;
+}
+
+.assignment-container .sidebar {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1.5rem;
+}
+/*# sourceMappingURL=styles.css.map */

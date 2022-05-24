@@ -1,0 +1,256 @@
+$brand-color: #0d6efd;
+$border-color: rgba(0, 0, 0, 0.125);
+
+* {
+	font-family: "Poppins", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.pointer:hover {
+	cursor: pointer;
+}
+
+// Signup page
+.signup-container {
+	max-width: 500px;
+}
+
+// Create classroom page
+.create-classroom-container {
+	max-width: 500px;
+}
+
+// Dashboard
+.classes-container {
+	.class-card {
+		min-height: 10rem;
+		min-width: 20rem;
+		border: 1px solid $border-color;
+		border-radius: 0.25rem;
+		margin: 0.5rem;
+		padding: 1.5rem;
+		cursor: pointer;
+
+		&:hover {
+			border-color: $brand-color;
+		}
+
+		.card-head {
+			.class-title {
+				color: $brand-color;
+			}
+			// .class-teacher {}
+		}
+		.card-body {
+			padding: 1rem 0;
+		}
+	}
+}
+
+.upcoming-container {
+	border: 1px solid $border-color;
+	border-radius: 0.25rem;
+	padding: 1rem;
+	margin: 0.5rem 0;
+
+	h2 {
+		font-size: calc(0.5rem + 0.9vw);
+	}
+}
+
+.banner-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	.banner-icon {
+		font-size: 2.5rem;
+		color: #fff;
+		background: #0d6efd;
+		border-radius: 50px;
+		// font-size: 25px;
+		padding: 15px;
+		margin-right: 15px;
+	}
+	// .banner-details {}
+}
+
+// Create Post
+.create-post-container {
+	// margin: 0.5rem 0;
+	// transition: all 4s;
+
+	// textarea {
+	// 	outline: none;
+	// 	border: 1px solid $border-color;
+	// 	transition: all 1s;
+
+	// 	&:hover {
+	// 		outline: none;
+	// 		border: 1px solid $brand-color;
+	// 		cursor: pointer;
+	// 	}
+
+	// 	&:focus {
+	// 		min-height: calc(1.5em + 8.75rem + 2px);
+	// 		cursor: text;
+	// 	}
+	// }
+
+	// button {
+	//     transition: opacity 1s ease-out;
+	//     opacity: 0;
+	//     height: 0;
+	//     overflow: hidden;
+	// }
+
+	// textarea:focus + button {
+	//     opacity: 1;
+	//     height: auto;
+	// }
+}
+
+// Posts
+.post-list-container {
+	display: flex;
+	flex-direction: column;
+
+	.post {
+		margin: 0.5rem 0;
+		padding: 1rem;
+		border: 1px solid #ddd;
+		border-radius: 0.25rem;
+		cursor: pointer;
+
+		display: flex;
+
+		.post-icon {
+			color: #fff;
+			background: #0d6efd;
+			border-radius: 50px;
+			font-size: 22.5px;
+			padding: 12.5px;
+			margin-right: 15px;
+		}
+		.post-details {
+			.post-author {
+				font-size: large;
+				display: block;
+				color: $brand-color;
+			}
+			.post-date {
+				display: block;
+				font-size: small;
+			}
+		}
+
+		&:hover {
+			border-color: $brand-color;
+		}
+	}
+}
+
+// Assignments
+
+.assign-list-container {
+	display: flex;
+	flex-direction: column;
+
+	.assign {
+		margin: 0.5rem 0;
+		padding: 1rem;
+		border: 1px solid #ddd;
+		border-radius: 0.25rem;
+		cursor: pointer;
+
+		display: flex;
+
+		.assign-icon {
+			color: #fff;
+			background: #0d6efd;
+			border-radius: 50px;
+			font-size: 22.5px;
+			padding: 12.5px;
+			margin-right: 15px;
+		}
+		.assign-details {
+			.assign-title {
+				font-size: larger;
+				display: block;
+				color: $brand-color;
+			}
+			.assign-date {
+				display: block;
+				font-size: small;
+			}
+		}
+
+		&:hover {
+			border-color: $brand-color;
+		}
+	}
+}
+
+// Navbar
+.navbar-container {
+	.right-menu {
+		.create-icon {
+			margin-right: 2rem;
+			outline: none;
+			padding: 0.5rem;
+			border: none;
+			width: 40px;
+			height: 40px;
+			border-radius: 2.5rem;
+		}
+	}
+}
+
+// Joing Page
+.join-container {
+	border: 1px solid $border-color;
+	padding: 2rem;
+	max-width: 500px;
+
+	.class-details {
+		border: 1px solid $border-color;
+		padding: 1rem;
+	}
+}
+
+// Landing Page
+
+.landing-page-container {
+	.icon {
+		font-size: 7.5rem;
+		padding: 2.5rem;
+	}
+}
+
+// Create assignment
+.create-assignment-container {
+	.marks {
+		max-width: 125px;
+	}
+
+	.date {
+		max-width: 225px;
+	}
+}
+
+// Single assignment
+.assignment-container {
+	.sidebar {
+		border: 1px solid $border-color;
+		padding: 1.5rem;
+	}
+}

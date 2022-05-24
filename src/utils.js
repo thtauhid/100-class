@@ -1,4 +1,8 @@
-export const Logout = () => {
-    localStorage.removeItem('user_id')
-    window.location = "/";
+export const isTeacher = () => {
+	return true
+}
+
+export const isStudent = () => {
+	// yet to be written
+	return true
 }
