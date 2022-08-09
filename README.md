@@ -1,13 +1,11 @@
 # White Board
 
-An open source project inspired by google classroom.
+An open source alternative to google classroom.
 
-## Future Development
+## Issues
 
-<!-- Need to Write down -->
+If you are facing any issue please [create an issue](https://github.com/thtauhid/white-board/issues/new)
 
-Pull requests are welcome
+## Contributing
 
-## Known Issues
-
-<!-- Need to Write down -->
+If you are interested in contributing to this project, please [create pull request](https://github.com/thtauhid/white-board/pulls)
