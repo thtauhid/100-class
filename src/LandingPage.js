@@ -36,8 +36,8 @@ function LandingPage() {
 				</p>
 
 				<p>
-					Please <Link to='/signin'>Sign in</Link> or{" "}
-					<Link to='/signup'>Sign up</Link> to use this platform.
+					Please <Link to='/login'>Login</Link> or{" "}
+					<Link to='/register'>Register</Link> to use this platform.
 				</p>
 			</div>
 		</>
