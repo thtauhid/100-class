@@ -2,6 +2,8 @@
 
 An open source alternative to google classroom.
 
+Demo: https://white-board-classroom.web.app/
+
 ## Issues
 
 If you are facing any issue please [create an issue](https://github.com/thtauhid/white-board/issues/new)
